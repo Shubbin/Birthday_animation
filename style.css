@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #eac285;
+  background-color: #000;
 }
 .container {
   width: 400px;
   height: 400px;
-  background-color: #ffffff;
+  background-color: #eac285;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -37,11 +37,11 @@ body {
   background-position: 28px 0;
   background-image: linear-gradient(
       transparent 50px,
-      #e3a953 50px,
-      #e3a953 60px,
+      #ff4b55 50px,
+      #ff4b55 60px,
       transparent 60px
     ),
-    radial-gradient(circle at 30px 5px, #713e16 30px, #eac284 31px);
+    radial-gradient(circle at 30px 5px, #ff4b55 30px, #f3e5ab 31px);
 }
 .middle-layer {
   transform: scale(0.85);
