@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg'
     ];
     const sliderImage = document.getElementById('sliderImage');
+    const moreSurpriseButton = document.getElementById('moreSurpriseButton');
 
     function showNextImage() {
       sliderImage.src = images[currentImage];
@@ -12,5 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     showNextImage();
-    setInterval(showNextImage, 5000);
+    setInterval(showNextImage, 3000);
+
+    setTimeout(function() {
+      moreSurpriseButton.style.display = 'block';
+    }, images.length * 5000); // Show button after all images have been displayed
+
+    moreSurpriseButton.addEventListener('click', function() {
+      window.location.href = 'books.html';
+    });
   });
